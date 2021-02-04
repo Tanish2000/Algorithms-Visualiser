@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Algorithms Visualizer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <img src="./img/logo.png" class="logo" />
+                <h1>Algorithms Visualizer</h1>
+                <p class="biblio">"An Algorithm is like a Recipe....."</p>
+            </div>
+        </header>
+        <div class="sub_container">
+            <section class="options">
+                <p id="heading"> Select Algorithm !! </p>
+                <br>
+                <div class="algo_options">
+                    <div>
+                        <del>
+                            <input type="radio" name="select" id="search_algo" />
+                            <label class="layer1">Search Algorithms</label>
+                        </del>
+                        <div class="search_types reveal_if_active">
+                            <div>
+                                <input type="radio" name="search_type" id="linear_search" value="Linear Search" />
+                                <label class="layer2">Linear Search</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="search_type" id="binary_search" value="Binary Search" />
+                                <label class="layer2">Binary Search</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="radio" name="select" id="sort_algo" />
+                        <label class="layer1">Sort Algorithms</label>
+                        <div class="sort_types reveal_if_active">
+                            <div>
+                                <input type="radio" name="sort_type" id="bubble_sort" />
+                                <label class="layer2">Bubble Sort</label>
+                            </div>
+                            <del>
+                                <div>
+                                    <input type="radio" name="sort_type" id="insertion_sort" />
+                                    <label class="layer2">Insertion Sort</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="sort_type" id="selection_sort" />
+                                    <label class="layer2">Selection Sort</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="sort_type" id="merge_sort" />
+                                    <label class="layer2">Merge Sort</label>
+                                </div>
+                            </del>
+                        </div>
+                    </div>
+                    <input type="submit" class="submit_btn" value="Visualize!!" id="visualize_btn" />
+                    <div id="display">
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="results">
+                    
+                    <h3 class="nothing"><img src="https://img.icons8.com/clouds/100/000000/daruma-doll.png"/>Please select an Algorithm to start...</h3>
+                </div>
+                <div id="info"></div>
+            </section>
+        </div>
+        <footer>
+            <div class="bottom">
+                <div class="profile_image">
+                    <img src="./img/profile.jpg" class="profile" />
+                </div>
+                <div class="profile_section">
+                    <p style="text-align: center;">Tanish Singh Chouhan</p>
+                    <a href="https://www.linkedin.com/in/tanish-singh-chouhan-a78856193/"><img src="https://img.icons8.com/clouds/50/000000/linkedin.png"/></a>
+                    <a href="https://twitter.com/TANISHCHOUHAN9"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png"/></a>
+                    <a href="https://www.instagram.com/tanish8651/"><img src="https://img.icons8.com/clouds/50/000000/instagram-new--v2.png"/></a>
+                    <a href="https://github.com/Tanish2000"><img src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
+                </div> 
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="./algo_scripts/sorting/bubble_sort.js"></script>
+<script src="./algo_scripts/sorting/insertion_sort.js"></script>
+<script src="./algo_scripts/sorting/selection_sort.js"></script>
+<script src="./algo_scripts/sorting/merge_sort.js"></script>
+<script src="./algo_scripts/searching/linear_search.js"></script>
+<script src="./algo_scripts/searching/binary_search.js"></script>
+<script src="index.js"></script>
+
+</html>
