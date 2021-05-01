@@ -21,19 +21,19 @@
                 <br>
                 <div class="algo_options">
                     <div>
-                        <del>
-                            <input type="radio" name="select" id="search_algo" />
-                            <label class="layer1">Search Algorithms</label>
-                        </del>
+                        <input type="radio" name="select" id="search_algo" />
+                        <label class="layer1">Search Algorithms</label>
                         <div class="search_types reveal_if_active">
                             <div>
                                 <input type="radio" name="search_type" id="linear_search" value="Linear Search" />
                                 <label class="layer2">Linear Search</label>
                             </div>
-                            <div>
-                                <input type="radio" name="search_type" id="binary_search" value="Binary Search" />
-                                <label class="layer2">Binary Search</label>
-                            </div>
+                            <del>
+                                <div>
+                                    <input type="radio" name="search_type" id="binary_search" value="Binary Search" />
+                                    <label class="layer2">Binary Search</label>
+                                </div>
+                            </del>
                         </div>
                     </div>
                     <br>
@@ -67,12 +67,36 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div id="results">
-                    
-                    <h3 class="nothing"><img src="https://img.icons8.com/clouds/100/000000/daruma-doll.png"/>Please select an Algorithm to start...</h3>
+            <section id="results">
+                <div id="bars">
+                    <h3 class="nothing"><img src="https://img.icons8.com/clouds/100/000000/daruma-doll.png" />Please
+                        select an Algorithm to start...</h3>
                 </div>
-                <div id="info"></div>
+                <div class="extra">
+                    <h4>Enter the number to search </h4>
+                    <form>
+                        <input id="search_num" type="text" required/>
+                        <input type="submit" value="&#8608" id="search_num_submit" onclick="search()"/>
+                    </form>
+                </div>
+                <div id="info">
+                    <h1 id="algo_title"></h1>
+                    <div class="time_comp">
+                        <p>Time Complexity : <span id="time_comp_value"></span></p>
+                        <p>Space Complexity : <span id="space_comp_value"></span></p>
+                    </div>
+                    <div id="code_snippet">
+                        <div class="code_snipp">
+                            <h3>Code Snippets</h3>
+                            <select name="languages" id="languages">
+                                <option id="C++" selected>C++</option>
+                                <option id="Java">Java</option>
+                                <option id="Python">Python</option>
+                            </select>
+                        </div>
+                        <img src="" id="src_code_img" />
+                    </div>
+                </div>
             </section>
         </div>
         <footer>
@@ -82,11 +106,15 @@
                 </div>
                 <div class="profile_section">
                     <p style="text-align: center;">Tanish Singh Chouhan</p>
-                    <a href="https://www.linkedin.com/in/tanish-singh-chouhan-a78856193/"><img src="https://img.icons8.com/clouds/50/000000/linkedin.png"/></a>
-                    <a href="https://twitter.com/TANISHCHOUHAN9"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png"/></a>
-                    <a href="https://www.instagram.com/tanish8651/"><img src="https://img.icons8.com/clouds/50/000000/instagram-new--v2.png"/></a>
-                    <a href="https://github.com/Tanish2000"><img src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
-                </div> 
+                    <a href="https://www.linkedin.com/in/tanish-singh-chouhan-a78856193/"><img
+                            src="https://img.icons8.com/clouds/50/000000/linkedin.png" /></a>
+                    <a href="https://twitter.com/TANISHCHOUHAN9"><img
+                            src="https://img.icons8.com/bubbles/50/000000/twitter.png" /></a>
+                    <a href="https://www.instagram.com/tanish8651/"><img
+                            src="https://img.icons8.com/clouds/50/000000/instagram-new--v2.png" /></a>
+                    <a href="https://github.com/Tanish2000"><img
+                            src="https://img.icons8.com/bubbles/50/000000/github.png" /></a>
+                </div>
             </div>
         </footer>
 

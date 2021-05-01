@@ -18,7 +18,7 @@ function clearcontent(ele_id) {
 function submit_click() {
     clearcontent("display");
     if (!(algo_select[0].checked) && !(algo_select[1].checked)) {
-        remarks_area.innerHTML = " Please select atleast one of the algorithm!! ";
+        remarks_area.innerHTML = " Please select atleast one algorithm!! ";
         show_remark();
         return;
     }
@@ -34,6 +34,7 @@ function submit_click() {
         }
         else if(i==0) {
             remarks_area.innerHTML = "You selected Linear Search!!!";
+            document.getElementById('info').style.display  = "block";
             linear_search();
         }
         else{
@@ -50,6 +51,8 @@ function submit_click() {
         }
         if (i == 0) {
             remarks_area.innerHTML = "You selected Bubble Sort!!!";
+            document.getElementById('info').style.display  = "block";
+            console.log('Bubble Sort called');
             bubble_sort();
         }
         else if (i == 1) {
@@ -91,5 +94,6 @@ const throttle = (fn,limit) =>{
 const better_submit_click = throttle(submit_click,10000);
 
 submit_btn.addEventListener("click" , better_submit_click)
+
 
 
